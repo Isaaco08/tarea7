@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="funciones.js"></script>
+</head>
+    <div id="container">
+        <header>
+            <h1>Tarea #7</h1>
+            <h1>Ejercicios Básicos de JavaScript</h1>
+        </header>
+
+        <main id="contenido">
+
+            <div id="1">
+                <h3>Solicite la edad y si es mayor de 18 años indica que ya puede conducir.</h3>
+                <input type="edad" id="edad" placeholder="Digite su Edad">
+                <button id="botonEdad" onclick="verificarEdad()">Verificar</button>
+            </div>
+
+            <div id="2">
+                <h3>Solicite una nota (número). Muestra la calificación según la nota:</h3>
+                
+                <ul>
+                    <li>0-3: Muy deficiente</li>
+                    <li>3-5: Insuficiente</li>
+                    <li>5-6: Suficiente</li>
+                    <li>6-7: Bien</li>
+                    <li>7-9: Notable</li>
+                    <li>9-10: Sobresaliente</li>
+                </ul>
+                <input type="calificacion" id="calificacion" placeholder="Digite su Calificacion">
+                <button id="calificar" onclick="calificacion()">Calificar</button>
+               <br>
+               <br>
+            </div>
+
+            <div id="3">
+                <h3>Realiza un script que pida cadenas de texto hasta que se pulse “cancelar”. Al salir con 
+                    “cancelar” deben mostrarse todas las cadenas concatenadas con un guión -.</h3>
+                <button id="concatenarCadenas" onclick="concatenarCadenas()">Concatenar</button>
+                    
+                <p id="resultadopalabras">-</p>
+            </div>
+            
+            <div id="4">
+                <h3>Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un número 
+                    deberá indicarse con un «alert» y seguir pidiendo. Al salir con “cancelar” deberá indicarse 
+                    la suma total de los números introducidos.</h3>
+                <button id="validarNumero" onclick="validarNumero()">Suma del total</button>
+                <p id="contadornúmero">-</p>
+            </div>
+
+            <div id="5">
+                <h3>5. Realizar una página con un script que calcule el valor de la letra de un número de cedula 
+                    (Documento nacional de identidad).</h3>
+                <h3>El algoritmo para calcular la letra de la cedula es el siguiente :</h3>
+                <ul>
+                    <li>El número debe ser entre 0 y 99999999</li>
+                    <li>Debemos calcular el resto de la división entera entre el número y el número 23.</li>
+                    <li>Según el resultado, de 0 a 22, le corresponderá una letra de las siguientes: (T, R, W, A, G, 
+                        M, Y, F, P, D, X, B, N, J, Z, S, Q, V, H, L, C, K, E)</li>
+                    <li>Si lo introducido no es un número deberá indicarse con un alert y volver a preguntar.</li>
+                    <li>Deberá de repetirse el proceso hasta que el usuario pulse «cancelar».</li>
+                </ul>
+                <button id="calcularLetraCed" onclick="calcularLetraCedula()">Calcular</button>
+                <p id="cedulaResultado">-</p>
+            </div>
+            
+            <div id="6">
+                <h3>Realiza un script que pida número de filas y columnas y escriba una tabla. Dentro cada 
+                    una de las celdas deberá escribirse un número consecutivo en orden descendente. Si, por 
+                    ejemplo, la tabla es de 7×5 los números irán del 35 al 1.</h3>
+                <input type="textofilas" id="textofilas" placeholder="Filas">
+                <input type="textocolumnas" id="textocolumnas" placeholder="Columnas">
+
+                <br>
+                <br>
+                <button id="tabla" onclick="generarTabla()">Mostrar Tabla</button>
+                <br>
+                <br>
+                <div id="tblData">
+                    
+                </div>
+            </div>
+
+            <div id="7">
+                <h3>7. Crea una función que reciba 2 parámetros, precio e iva, y devuelva el precio con iva 
+                    incluido. Si no recibe el iva, aplicará el 13 por ciento por defecto.</h3>
+                <input type="text" id="textoPrecio" placeholder="Precio" required=required>
+                <input type="textoIVA" id="textoIVA" placeholder="Digite el IVA" value="13">
+                <button id="calcularIva" onclick="precioIVA()">Calcular</button>
+                <br>
+                <br>
+                    
+                <p id="resultadoIVA">-</p>
+            </div>
+
+        </main>
+    </div>
+
+    <article class="pie">
+        <footer class="pie">
+            <div class="footer-content">
+              <p>Autor: Isaac S. Alvarado</p>
+              <p>Tarea 7 Diseño Web</p>
+              <p>&copy; 2023 Todos los derechos reservados</p>
+            </div>
+        </footer>
+    </article>
+</body>
+</html>
